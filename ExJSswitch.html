@@ -1,0 +1,60 @@
+<!doctype html><html lang="en">
+
+<head>
+
+<title>JMMJSplay</title>
+<meta name="description"= content="This is an Exercise to try a JS switch Statement for 
+The Nashville Software School Program"</>
+<link rel="stylesheet" href="ExJSswitch.css"/>
+<!-- <script src="ExJSswitch.js"></script> -->
+<meta charset= "utf-8">
+	<script type="text/javascript">
+    function flip(ques1) {
+        if        (ques1.value === "No"){
+           document.write('<h2 class="clearfix">Please visit www.nashvillesoftwareschool.com for more information.</h2>');
+        } else {
+           document.write('<form id="firstName"><p>Please Enter Your First Name:<input type="text" name="firstName" size="15" maxlength="30" /></p></form>'
+               }
+    };
+
+// {
+// 			document.write('<h2 class="clearfix">Please visit www.nashvillesoftwareschool.com for more information.</h2>');
+// 		} else {
+// 			document.write('<h2>Welcome to my survey.</h2>');
+// 		}
+    // create a function flip with a parameter of pizzatype
+    //     if the value of pizzatype equals "Veggie Special"
+    //         select the veggies option
+    //     else if the value of pizzatype equals "Meat Special"
+    //         select the meat option
+    //     else if the value of pizzatype equals "Hawaiian"
+    //         select the hampineapple option
+    
+    </script>
+</head>
+<body>
+	<div id="column1"> <h1>NSS members</h1>
+	</div>
+
+<div id="Main"><h2 class="clearfix">Welcome to Jay's Javascript Switch Statement Exercise.</h2>
+</div>
+		<h2 class="clearfix">Are you a student at The Nashville Software School?  <br />
+
+	
+			<form id="Are" method="post" action="JMJSplay">
+				<input type ="radio" name="student" value="Yes" id="Yes" onclick="flip(YesEl)">
+			<label for ="Yes">Yes</label>
+			<input type ="radio" name="student" value="No" id="No" onclick= "flip(NoEl)">
+			<label for ="No">No</label>
+		</h2>
+
+		<script>
+		// var Are = document.getElementById ("Are")
+		// if ("Are"==="No")
+		var YesEl = document.getElementById("Yes");
+		var NoEl = document.getElementById("No")
+								
+		</script>
+
+	</form>
+</body>
