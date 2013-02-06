@@ -9,26 +9,71 @@ The Nashville Software School Program"</>
 <!-- <script src="ExJSswitch.js"></script> -->
 <meta charset= "utf-8">
 	<script type="text/javascript">
-    function flip(ques1) {
-        if        (ques1.value === "No"){
-           document.write('<h2 class="clearfix">Please visit www.nashvillesoftwareschool.com for more information.</h2>');
-        } else {
-           document.write('<form id="firstName"><p>Please Enter Your First Name:<input type="text" name="firstName" size="15" maxlength="30" /></p></form>'
+    function ques1() {
+    document.getElementById("results").innerHTML = ' ';
+        // var arestud = document.forms["Are"].student.value;
+        
+        if        (document.forms["Are"].No.checked){
+        var newelement = document.createElement("h3");
+        document.getElementById("results").appendChild(newelement);
+        newelement.appendChild(document.createTextNode("Please visit www.nashvillesoftwareschool.com for more information."));
+        
+        } else  
+        // if (document.forms["Are"].Yes.checked)
+        {
+        // mypara = document.getElementsById("results");
+        // myform = document.createElement("form");
+        // myselect = document.createElement("select");
+        // myOnChange = function(" " "location.href=myselect.options[myselect.selectedIndex].value");
+
+        // theOption=document.createElement("Option");
+        // theText=document.createTextNode("Please enter your first name:");
+        // theOption.appendChild(theText);
+
+        // myform.appendChild(myselect);
+        // mypara.appendChild(myform);
+
+        // myselect.onchange=myOnChange;
+
+
+        // myselect.setAttribute("bgColor","#FFCCFF");
+        // myselect.style.color="#663399";
+        // myselect.setAttribute("border","10px");
+        // myselect.style.fontWeight="bold";
+        // myselect.setAttribute("id","selectID");
+        // myform.setAttribute("id","formID");
+
+        // function deleteForm() {
+        // 	myPara=document.getElementById("paraID");
+        // 	myform=document.getElementById("formID");
+        // 	myPara.removeChild(myform);
+
+        // }
+
+        // function myOnClick(e) {
+        // 	alert('Hello');
+        // }
+
+
+
+        	var newelement = document.createElement("h3");
+        document.getElementById("results").appendChild(newelement);
+        newelement.appendChild(document.createTextNode("Thanks"));
+
+
+        // 	var newelement = document.createElement("p");
+        // document.getElementById("results").appendChild(newelement);
+        // newelement.appendChild(document.createElement(
+        // 	<form id="firstName">
+        // 	<p>Please Enter Your First Name:
+        // 	<input type="text" name="firstName" size="15" maxlength="30" />
+        // 	</p>
+        // 	</form>));
+
                }
     };
 
-// {
-// 			document.write('<h2 class="clearfix">Please visit www.nashvillesoftwareschool.com for more information.</h2>');
-// 		} else {
-// 			document.write('<h2>Welcome to my survey.</h2>');
-// 		}
-    // create a function flip with a parameter of pizzatype
-    //     if the value of pizzatype equals "Veggie Special"
-    //         select the veggies option
-    //     else if the value of pizzatype equals "Meat Special"
-    //         select the meat option
-    //     else if the value of pizzatype equals "Hawaiian"
-    //         select the hampineapple option
+
     
     </script>
 </head>
@@ -42,15 +87,14 @@ The Nashville Software School Program"</>
 
 	
 			<form id="Are" method="post" action="JMJSplay">
-				<input type ="radio" name="student" value="Yes" id="Yes" onclick="flip(YesEl)">
+				<input type ="radio" name="Yes" value="Yes" id="Yes" onclick="ques1(YesEl);">
 			<label for ="Yes">Yes</label>
-			<input type ="radio" name="student" value="No" id="No" onclick= "flip(NoEl)">
+			<input type ="radio" name="No" value="No" id="No" onclick="ques1(NoEl);">
 			<label for ="No">No</label>
 		</h2>
 
+<div id="results"></div>
 		<script>
-		// var Are = document.getElementById ("Are")
-		// if ("Are"==="No")
 		var YesEl = document.getElementById("Yes");
 		var NoEl = document.getElementById("No")
 								
