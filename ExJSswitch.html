@@ -11,74 +11,35 @@ The Nashville Software School Program"</>
 	<script type="text/javascript">
     function ques1() {
     document.getElementById("results").innerHTML = ' ';
-        // var arestud = document.forms["Are"].student.value;
-        
+       
         if        (document.forms["Are"].No.checked){
-        var newelement = document.createElement("h3");
-        document.getElementById("results").appendChild(newelement);
-        newelement.appendChild(document.createTextNode("Please visit www.nashvillesoftwareschool.com for more information."));
+        	var newelement1 = document.createElement("p");
+        document.getElementById("results").appendChild(newelement1);
+        var newelement2 = document.createElement("h3");
+        document.getElementById("results").appendChild(newelement2);
+        newelement2.appendChild(document.createTextNode("Please visit"));
         
-        } else  
-        // if (document.forms["Are"].Yes.checked)
-        {
-        // mypara = document.getElementsById("results");
-        // myform = document.createElement("form");
-        // myselect = document.createElement("select");
-        // myOnChange = function(" " "location.href=myselect.options[myselect.selectedIndex].value");
+        var newelement3 = document.createElement("h3");
+        document.getElementById("results").appendChild(newelement3);
+        newelement3.appendChild(document.createTextNode("www.nashvillesoftwareschool.com"));
 
-        // theOption=document.createElement("Option");
-        // theText=document.createTextNode("Please enter your first name:");
-        // theOption.appendChild(theText);
-
-        // myform.appendChild(myselect);
-        // mypara.appendChild(myform);
-
-        // myselect.onchange=myOnChange;
+        var newelement4 = document.createElement("h3");
+        document.getElementById("results").appendChild(newelement4);
+        newelement4.appendChild(document.createTextNode("for more information."));
 
 
-        // myselect.setAttribute("bgColor","#FFCCFF");
-        // myselect.style.color="#663399";
-        // myselect.setAttribute("border","10px");
-        // myselect.style.fontWeight="bold";
-        // myselect.setAttribute("id","selectID");
-        // myform.setAttribute("id","formID");
-
-        // function deleteForm() {
-        // 	myPara=document.getElementById("paraID");
-        // 	myform=document.getElementById("formID");
-        // 	myPara.removeChild(myform);
-
-        // }
-
-        // function myOnClick(e) {
-        // 	alert('Hello');
-        // }
-
-
-
+        
+        } else  {
         	var newelement = document.createElement("h3");
         document.getElementById("results").appendChild(newelement);
-        newelement.appendChild(document.createTextNode("Thanks"));
-
-
-        // 	var newelement = document.createElement("p");
-        // document.getElementById("results").appendChild(newelement);
-        // newelement.appendChild(document.createElement(
-        // 	<form id="firstName">
-        // 	<p>Please Enter Your First Name:
-        // 	<input type="text" name="firstName" size="15" maxlength="30" />
-        // 	</p>
-        // 	</form>));
-
-               }
+        newelement.appendChild(document.createTextNode("Thanks"));      
+         }
     };
-
-
     
     </script>
 </head>
 <body>
-	<div id="column1"> <h1>NSS members</h1>
+	<div id="column1"> <h1>Nashville Software School</h1>
 	</div>
 
 <div id="Main"><h2 class="clearfix">Welcome to Jay's Javascript Switch Statement Exercise.</h2>
@@ -87,9 +48,9 @@ The Nashville Software School Program"</>
 
 	
 			<form id="Are" method="post" action="JMJSplay">
-				<input type ="radio" name="Yes" value="Yes" id="Yes" onclick="ques1(YesEl);">
+				<input type ="radio" name="Yes" value="Yes" id="Yes" onclick="ques1();">
 			<label for ="Yes">Yes</label>
-			<input type ="radio" name="No" value="No" id="No" onclick="ques1(NoEl);">
+			<input type ="radio" name="No" value="No" id="No" onclick="ques1();">
 			<label for ="No">No</label>
 		</h2>
 
